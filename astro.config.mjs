@@ -7,7 +7,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://astropie.netlify.app",
+	site: "https://martamtc.github.io",
 	base: "/",
 	// trailingSlash: 'always',
 	integrations: [
