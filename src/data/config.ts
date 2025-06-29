@@ -1,9 +1,9 @@
 // Global variables
 export const siteLang = "en-US";
 export const siteCurrency = "USD";
-export const siteDomain = "astropie.com";
-export const siteName = "AstroPie";
-export const siteSlogan = "The best pies in the galaxy!";
+export const siteDomain = "martamtc.github.io";
+export const siteName = "Marta MTC";
+export const siteSlogan = "Marta MTC | Acupuntura, tuina,quigong...";
 export const themeColor = "#FF0000";
 
 export const phone = {
@@ -12,8 +12,8 @@ export const phone = {
 };
 
 export const email = {
-	href: "mailto:info@astropie.com",
-	label: "info@astropie.com",
+	href: "mailto:martapulidomtc@gmail.com",
+	label: "MartaMTC@gmail...",
 };
 
 export const address = {
