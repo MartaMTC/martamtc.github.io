@@ -201,6 +201,7 @@ p {
 
 section.bg-white + section.bg-white > .container,
 section.bg-brand-green + section.bg-brand-green > .container,
+section.bg-brand-purple + section.bg-brand-purple > .container,
 section.bg-brand-red + section.bg-brand-red > .container {
 	@apply pt-0;
 }
