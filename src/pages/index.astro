@@ -21,6 +21,7 @@ import reviewAuthors from "~/assets/images/review-authors.png";
 import Dessert from "~/assets/images/dessert.png";
 import Mussels from "~/assets/images/mussels2.png";
 import Qigong from "~/assets/images/6qigong.png";
+import KSP from "~/assets/images/8correcciónpostural.png";
 ---
 
 <Layout title="Home" pageTitle="Home" description="Bienvenido a la página de Medicina tradicional China de Marta!">
@@ -79,14 +80,14 @@ import Qigong from "~/assets/images/6qigong.png";
 						formats={["avif", "webp"]}
 						alt="A description of my image."
 					/>
-					<h3 class="h4 mt-0 font-black text-brand-purple"> Clases</h3>
+					<h3 class="h4 mt-0 font-black text-brand-blue"> Clases</h3>
 					<p>
 						Clases de Qi Gong y corrección postural KSP, para mejorar la conciencia corporal, reducir estrés y dolor, 
 						aumentar flexibilidad, equilibrio y energía vital, fortaleciendo cuerpo y mente.
 					</p>
 
 					<div class="mt-8 flex items-center gap-x-8">
-					<Button color="purple" url="/book">Book now</Button>
+					<Button color="blue" url="/book">Book now</Button>
 					</div>
 				</div>
 			</div>
@@ -99,14 +100,14 @@ import Qigong from "~/assets/images/6qigong.png";
 						formats={["avif", "webp"]}
 						alt="A description of my image."
 					/>
-					<h3 class="h4 mt-0 font-black text-brand-blue"> Servicios</h3>
+					<h3 class="h4 mt-0 font-black text-brand-purple"> Servicios</h3>
 					<p>
 						Sesiones de Acupuntura, Tuina, Moxibustión, Dieto-Fito terapia, Cupping y terapias energéticas, para 
 						reducir estrés y ansiedad y fortalecer tu sistema inmune.
 					</p>
 
 					<div class="mt-8 flex items-center gap-x-8">
-					<Button color="blue" url="/book">Book now</Button>
+					<Button color="purple" url="/book">Book now</Button>
 					</div>
 				</div>
 			</div>
@@ -259,20 +260,19 @@ import Qigong from "~/assets/images/6qigong.png";
 		</svg>
 	</Section>-->
 
-	<!-- Desserts -->
+	<!-- Qi Gong -->
 	<Section class:list={"bg-white"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none order-2">
-				<Badge title="dolce" />
-				<h2 slot="heading-title" class="font-black text-brand-purple h2 !my-4">Qi Gong</h2>
+				<Badge color="blue" title="Clases" />
+				<h2 slot="heading-title" class="font-black text-brand-blue h2 !my-4">Qi Gong</h2>
 				<div slot="heading-content">
 					<p>
 						El Qi Gong o Chi Kung es una práctica milenaria de origen chino que consiste en el cultivo y la práctica de la movilización consciente 
 						de la energía por el interior del cuerpo. Se basa en suaves movimientos físicos, ejercicios respiratorios y concentración mental, y tiene 
 						como objetivo fortalecer el organismo a nivel físico, mental y espiritual. Practicar Qi Gong generara numerosos beneficios para la salud, 
-						como, por ejemplo: la reducción del estrés y la ansiedad, al promover la relajación y el equilibrio emocional, fortalecimiento del sistema 
-						inmunológico, mejorar la digestión al estimular el movimiento intestinal y reducir el estreñimiento, alivio del dolor en músculos y 
-						articulaciones, mejorar de la calidad del sueño…
+						como, por ejemplo: la reducción del estrés y la ansiedad, al promover la relajación y el equilibrio emocional, mejorar la digestión al 
+						estimular el movimiento intestinal y reducir el estreñimiento, alivio del dolor en músculos y articulaciones...
 					</p>
 
 					<p>
@@ -284,7 +284,7 @@ import Qigong from "~/assets/images/6qigong.png";
 					</p>
 
 					<div class="mt-8">
-						<Button color="purple" url="/book">Book now</Button>
+						<Button color="blue" url="/book">Book now</Button>
 					</div>
 				</div>
 			</div>
@@ -301,24 +301,263 @@ import Qigong from "~/assets/images/6qigong.png";
 		</Hero>
 	</Section>
 
+	<!-- KSP -->
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none order-2">
+				<Badge color="blue" title="Clases" />
+				<h2 slot="heading-title" class="font-black text-brand-blue h2 !my-4">Corrección Portural KSP</h2>
+				<div slot="heading-content">
+					<p>
+						El Método K-Stretch ® Postural KSP es un método de Reeducación Postural que utiliza una hamaca especial 
+						para realizar ejercicios de estiramiento y fortalecimiento muscular. Su objetivo principal es devolver 
+						al cuerpo su funcionalidad y eficacia mediante el tratamiento de las cadenas musculares y fasciales. 
+						Algunos de sus beneficios son: reequilibrar el tono muscular, mejorar la postura, mejorar la elasticidad 
+						muscular y movilidad articular, reducir el dolor, mejorar la circulación y mejorar la condición física 
+						en general.
+					</p>
+
+					<p>
+						Horario de clases: Martes y Jueves a 9:00h, 18:30h y 19:30h.
+					</p>
+
+					<p>
+						Dirección: Moofit–C/Comandante Benítez, 17–08028 BCN.
+					</p>
+
+					<div class="mt-8">
+						<Button color="blue" url="/book">Book now</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={KSP}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+	<!-- Acupuntura -->
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none">
+				<Badge color="purple" title="Servicios" />
+				<h2 slot="heading-title" class="font-black text-brand-purple h2 !my-4">Acupuntura</h2>
+				<div slot="heading-content">
+					<p>
+						Técnica de Medicina Tradicional China (MTC) que consiste en la introducción de agujas muy finas, 
+						estériles y de un solo uso, en determinados puntos del cuerpo para aliviar dolores y prevenir o 
+						sanar ciertas enfermedades y desequilibrios. Mejora el bienestar general. Para la MTC, la acupuntura 
+						equilibra el flujo de energía o fuerza vital, conocida como «chi» o «qi», que fluye a través de canales 
+						(meridianos) en el cuerpo. Al insertar agujas en puntos específicos en estos meridianos, el flujo de 
+						energía se reequilibra.We're located in the heart of the city, just a stone's throw away from the main 
+						square. Our	restaurant is the perfect place to enjoy a delicious meal with friends and family.
+					</p>
+
+					<!--<span class="text-brand-red font-medium">
+						✔ We also do take-away, so you can enjoy your food at home
+					</span>-->
+
+					<div class="mt-8">
+						<Button color="purple" url="/book">Book a table</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Dessert}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
 	<!-- Contact -->
 	<Section class:list={"bg-white"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none">
-				<Badge color="red" title="benvenuto" />
-				<h2 slot="heading-title" class="font-black text-brand-red h2 !my-4">Drop by and say hello</h2>
+				<Badge color="purple" title="Servicios" />
+				<h2 slot="heading-title" class="font-black text-brand-purple h2 !my-4">Tuina</h2>
 				<div slot="heading-content">
 					<p>
-						We're located in the heart of the city, just a stone's throw away from the main square. Our
-						restaurant is the perfect place to enjoy a delicious meal with friends and family.
+						Técnica de Medicina Tradicional China (MTC) que consiste en el uso de movimientos de masaje fuertes 
+						y vigorosos y la acupresión. Los beneficios de esta técnica están por encima de la relajación muscular, 
+						es decir, el Tuina tiene como objetivo central estimular la capacidad que tiene el cuerpo de recuperarse 
+						por sí mismo. Consigue efectos en el exterior, para transportarlos a través del masaje al interior del 
+						organismo. De esa manera, restablece el equilibrio físico, psicológico y energético del cuerpo.
 					</p>
 
-					<span class="text-brand-red font-medium">
+					<!--<span class="text-brand-red font-medium">
 						✔ We also do take-away, so you can enjoy your food at home
-					</span>
+					</span>-->
 
 					<div class="mt-8">
-						<Button color="red" url="/book">Book a table</Button>
+						<Button color="purple" url="/book">Book a table</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Dessert}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+	<!-- Contact -->
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none">
+				<Badge color="purple" title="Servicios" />
+				<h2 slot="heading-title" class="font-black text-brand-purple h2 !my-4">Moxibustión</h2>
+				<div slot="heading-content">
+					<p>
+						La moxibustión es una técnica de  Medicina Tradicional China (MTC) que consiste en aplicar calor 
+						estimulando una serie de puntos o zonas del cuerpo. Esta técnica utiliza las hojas pulverizadas, 
+						secas y trituradas de la planta Artemisia vulgaris a la que comúnmente se le da forma de cigarro 
+						denominado moxa. El objetivo es generar un efecto que ayude a equilibrar el organismo gracias a los 
+						estímulos producidos por el calor que penetra a través de los puntos y meridianos de acupuntura, 
+						afectando así a nuestras funciones fisiológicas y órganos internos restableciendo el equilibrio del cuerpo.
+					</p>
+
+					<!--<span class="text-brand-red font-medium">
+						✔ We also do take-away, so you can enjoy your food at home
+					</span>-->
+
+					<div class="mt-8">
+						<Button color="purple" url="/book">Book a table</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Dessert}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+	<!-- Contact -->
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none">
+				<Badge color="purple" title="Servicios" />
+				<h2 slot="heading-title" class="font-black text-brand-purple h2 !my-4">Acupuntura</h2>
+				<div slot="heading-content">
+					<p>
+						Técnica de Medicina Tradicional China (MTC) que consiste en la introducción de agujas muy finas, 
+						estériles y de un solo uso, en determinados puntos del cuerpo para aliviar dolores y prevenir o 
+						sanar ciertas enfermedades y desequilibrios. Mejora el bienestar general. Para la MTC, la acupuntura 
+						equilibra el flujo de energía o fuerza vital, conocida como «chi» o «qi», que fluye a través de canales 
+						(meridianos) en el cuerpo. Al insertar agujas en puntos específicos en estos meridianos, el flujo de 
+						energía se reequilibra.We're located in the heart of the city, just a stone's throw away from the main 
+						square. Our	restaurant is the perfect place to enjoy a delicious meal with friends and family.
+					</p>
+
+					<!--<span class="text-brand-red font-medium">
+						✔ We also do take-away, so you can enjoy your food at home
+					</span>-->
+
+					<div class="mt-8">
+						<Button color="purple" url="/book">Book a table</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Dessert}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+	<!-- Contact -->
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none">
+				<Badge color="purple" title="Servicios" />
+				<h2 slot="heading-title" class="font-black text-brand-purple h2 !my-4">Acupuntura</h2>
+				<div slot="heading-content">
+					<p>
+						Técnica de Medicina Tradicional China (MTC) que consiste en la introducción de agujas muy finas, 
+						estériles y de un solo uso, en determinados puntos del cuerpo para aliviar dolores y prevenir o 
+						sanar ciertas enfermedades y desequilibrios. Mejora el bienestar general. Para la MTC, la acupuntura 
+						equilibra el flujo de energía o fuerza vital, conocida como «chi» o «qi», que fluye a través de canales 
+						(meridianos) en el cuerpo. Al insertar agujas en puntos específicos en estos meridianos, el flujo de 
+						energía se reequilibra.We're located in the heart of the city, just a stone's throw away from the main 
+						square. Our	restaurant is the perfect place to enjoy a delicious meal with friends and family.
+					</p>
+
+					<!--<span class="text-brand-red font-medium">
+						✔ We also do take-away, so you can enjoy your food at home
+					</span>-->
+
+					<div class="mt-8">
+						<Button color="purple" url="/book">Book a table</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Dessert}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+	<!-- Contact -->
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none">
+				<Badge color="purple" title="Servicios" />
+				<h2 slot="heading-title" class="font-black text-brand-purple h2 !my-4">Acupuntura</h2>
+				<div slot="heading-content">
+					<p>
+						Técnica de Medicina Tradicional China (MTC) que consiste en la introducción de agujas muy finas, 
+						estériles y de un solo uso, en determinados puntos del cuerpo para aliviar dolores y prevenir o 
+						sanar ciertas enfermedades y desequilibrios. Mejora el bienestar general. Para la MTC, la acupuntura 
+						equilibra el flujo de energía o fuerza vital, conocida como «chi» o «qi», que fluye a través de canales 
+						(meridianos) en el cuerpo. Al insertar agujas en puntos específicos en estos meridianos, el flujo de 
+						energía se reequilibra.We're located in the heart of the city, just a stone's throw away from the main 
+						square. Our	restaurant is the perfect place to enjoy a delicious meal with friends and family.
+					</p>
+
+					<!--<span class="text-brand-red font-medium">
+						✔ We also do take-away, so you can enjoy your food at home
+					</span>-->
+
+					<div class="mt-8">
+						<Button color="purple" url="/book">Book a table</Button>
 					</div>
 				</div>
 			</div>
