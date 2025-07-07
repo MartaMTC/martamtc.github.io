@@ -5,7 +5,8 @@
 	--font-inter: "Inter", "sans-serif";
 	--color-brand-green: #157f71;
 	--color-brand-red: #db1d00;
-	--color-brand-purple: #5c0899;
+	--color-brand-purple: #7920ba;
+	--color-brand-blue: #238dd9;
 }
 
 @utility container {
@@ -183,6 +184,10 @@ p {
 	@apply bg-brand-purple hover:bg-brand-purple/80 text-white focus-visible:outline-brand-purple;
 }
 
+.button-blue {
+	@apply bg-brand-blue hover:bg-brand-blue/80 text-white focus-visible:outline-brand-blue;
+}
+
 .menu-item-highlighted.menu-item-highlighted {
 	@apply text-white bg-brand-green px-4 rounded-full py-1.5 hover:bg-brand-green/80 hover:text-white;
 }
@@ -202,6 +207,7 @@ p {
 section.bg-white + section.bg-white > .container,
 section.bg-brand-green + section.bg-brand-green > .container,
 section.bg-brand-purple + section.bg-brand-purple > .container,
+section.bg-brand-blue + section.bg-brand-blue > .container,
 section.bg-brand-red + section.bg-brand-red > .container {
 	@apply pt-0;
 }
