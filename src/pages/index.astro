@@ -20,8 +20,17 @@ import DecorativeImage from "~/assets/images/pexels-shvetsa-5953523.jpg";
 import reviewAuthors from "~/assets/images/review-authors.png";
 import Dessert from "~/assets/images/dessert.png";
 import Mussels from "~/assets/images/mussels2.png";
+import Clase from "~/assets/images/7técnicasenergéticas.png";
+import Servicio from "~/assets/images/Servicios.png";
+import Blog from "~/assets/images/Blog.png";
+import Acupuntura from "~/assets/images/1acupuntura.png";
+import Tuina from "~/assets/images/2tuina.png";
+import Moxa from "~/assets/images/3moxa.png";
+import Fito from "~/assets/images/4fitodieto.png";
+import Ventosas from "~/assets/images/5ventosas.png";
 import Qigong from "~/assets/images/6qigong.png";
 import KSP from "~/assets/images/8correcciónpostural.png";
+
 ---
 
 <Layout title="Home" pageTitle="Home" description="Bienvenido a la página de Medicina tradicional China de Marta!">
@@ -76,7 +85,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 				<div class="flex flex-col items-center prose text-center">
 					<Picture
 						class:list={"not-prose w-full h-auto"}
-						src={Pizza}
+						src={Clase}
 						formats={["avif", "webp"]}
 						alt="A description of my image."
 					/>
@@ -96,7 +105,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 				<div class="flex flex-col items-center prose text-center">
 					<Picture
 						class:list={"not-prose w-full h-auto"}
-						src={Spaghetti}
+						src={Servicio}
 						formats={["avif", "webp"]}
 						alt="A description of my image."
 					/>
@@ -116,7 +125,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 				<div class="flex flex-col items-center prose text-center">
 					<Picture
 						class:list={"not-prose w-full h-auto"}
-						src={Fish}
+						src={Blog}
 						formats={["avif", "webp"]}
 						alt="A description of my image."
 					/>
@@ -284,7 +293,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 					</p>
 
 					<div class="mt-8">
-						<Button color="blue" url="/book">Book now</Button>
+						<Button color="blue" url="/book">Reservar</Button>
 					</div>
 				</div>
 			</div>
@@ -326,7 +335,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 					</p>
 
 					<div class="mt-8">
-						<Button color="blue" url="/book">Book now</Button>
+						<Button color="blue" url="/book">Reservar</Button>
 					</div>
 				</div>
 			</div>
@@ -365,7 +374,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 					</span>-->
 
 					<div class="mt-8">
-						<Button color="purple" url="/book">Book a table</Button>
+						<Button color="purple" url="/book">Reservar</Button>
 					</div>
 				</div>
 			</div>
@@ -373,7 +382,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 			<div slot="hero-content-right">
 				<Picture
 					class:list={"mx-auto"}
-					src={Dessert}
+					src={Acupuntura}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
@@ -382,7 +391,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 		</Hero>
 	</Section>
 
-	<!-- Contact -->
+	<!-- Tuina -->
 	<Section class:list={"bg-white"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none">
@@ -402,7 +411,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 					</span>-->
 
 					<div class="mt-8">
-						<Button color="purple" url="/book">Book a table</Button>
+						<Button color="purple" url="/book">Reservar</Button>
 					</div>
 				</div>
 			</div>
@@ -410,7 +419,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 			<div slot="hero-content-right">
 				<Picture
 					class:list={"mx-auto"}
-					src={Dessert}
+					src={Tuina}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
@@ -419,7 +428,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 		</Hero>
 	</Section>
 
-	<!-- Contact -->
+	<!-- Moxibustión -->
 	<Section class:list={"bg-white"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none">
@@ -440,7 +449,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 					</span>-->
 
 					<div class="mt-8">
-						<Button color="purple" url="/book">Book a table</Button>
+						<Button color="purple" url="/book">Reservar</Button>
 					</div>
 				</div>
 			</div>
@@ -448,7 +457,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 			<div slot="hero-content-right">
 				<Picture
 					class:list={"mx-auto"}
-					src={Dessert}
+					src={Moxa}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
@@ -457,21 +466,21 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 		</Hero>
 	</Section>
 
-	<!-- Contact -->
+	<!-- Dieto-Fito terapia -->
 	<Section class:list={"bg-white"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none">
 				<Badge color="purple" title="Servicios" />
-				<h2 slot="heading-title" class="font-black text-brand-purple h2 !my-4">Acupuntura</h2>
+				<h2 slot="heading-title" class="font-black text-brand-purple h2 !my-4">Dieto-Fito terapia</h2>
 				<div slot="heading-content">
 					<p>
-						Técnica de Medicina Tradicional China (MTC) que consiste en la introducción de agujas muy finas, 
-						estériles y de un solo uso, en determinados puntos del cuerpo para aliviar dolores y prevenir o 
-						sanar ciertas enfermedades y desequilibrios. Mejora el bienestar general. Para la MTC, la acupuntura 
-						equilibra el flujo de energía o fuerza vital, conocida como «chi» o «qi», que fluye a través de canales 
-						(meridianos) en el cuerpo. Al insertar agujas en puntos específicos en estos meridianos, el flujo de 
-						energía se reequilibra.We're located in the heart of the city, just a stone's throw away from the main 
-						square. Our	restaurant is the perfect place to enjoy a delicious meal with friends and family.
+						La Dietoterapia china es una técnica de MTC, que clasifica los alimentos de acuerdo a su naturaleza, 
+						sabor, color… Consiste en aplicar la nutrición humana al tratamiento de una persona con el objetivo de 
+						corregir o prevenir una enfermedad. Esta disciplina se enfoca en modificar la alimentación habitual para 
+						responder a las necesidades de cada uno. 
+						La Fitoterapia china es una técnica de MTC que utiliza hierbas y plantas medicinales para prevenir y tratar 
+						enfermedades y mejorar la salud en general de la persona. En esta forma de tratamiento también se utilizan 
+						ingredientes de mineral en la elaboración de sus fórmulas. 
 					</p>
 
 					<!--<span class="text-brand-red font-medium">
@@ -479,7 +488,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 					</span>-->
 
 					<div class="mt-8">
-						<Button color="purple" url="/book">Book a table</Button>
+						<Button color="purple" url="/book">Reservar</Button>
 					</div>
 				</div>
 			</div>
@@ -487,7 +496,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 			<div slot="hero-content-right">
 				<Picture
 					class:list={"mx-auto"}
-					src={Dessert}
+					src={Fito}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
@@ -496,21 +505,21 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 		</Hero>
 	</Section>
 
-	<!-- Contact -->
+	<!-- Cupping -->
 	<Section class:list={"bg-white"}>
 		<Hero>
 			<div slot="hero-content-left" class="prose max-w-none">
 				<Badge color="purple" title="Servicios" />
-				<h2 slot="heading-title" class="font-black text-brand-purple h2 !my-4">Acupuntura</h2>
+				<h2 slot="heading-title" class="font-black text-brand-purple h2 !my-4">Cupping</h2>
 				<div slot="heading-content">
 					<p>
-						Técnica de Medicina Tradicional China (MTC) que consiste en la introducción de agujas muy finas, 
-						estériles y de un solo uso, en determinados puntos del cuerpo para aliviar dolores y prevenir o 
-						sanar ciertas enfermedades y desequilibrios. Mejora el bienestar general. Para la MTC, la acupuntura 
-						equilibra el flujo de energía o fuerza vital, conocida como «chi» o «qi», que fluye a través de canales 
-						(meridianos) en el cuerpo. Al insertar agujas en puntos específicos en estos meridianos, el flujo de 
-						energía se reequilibra.We're located in the heart of the city, just a stone's throw away from the main 
-						square. Our	restaurant is the perfect place to enjoy a delicious meal with friends and family.
+						La terapia con ventosas o cupping es una de las técnicas más utilizadas por la MTC, desde la 
+						antigüedad. Es un método seguro, eficaz y de fácil manejo para cuidar la salud y prevenir 
+						enfermedades. Las ventosas tradicionales son recipientes parecidos a ‘vasos de vidrio’, que 
+						crean vacío sobre la piel. Las más utilizadas son de vidrio, plástico o silicona, actúan estimulando 
+						la piel y los tejidos subcutáneos para activar la circulación de sangre y energía en los meridianos, 
+						regeneran tejidos, deshacen adherencias internas, tienen acción analgésica y eliminan los factores 
+						patógenos.
 					</p>
 
 					<!--<span class="text-brand-red font-medium">
@@ -518,7 +527,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 					</span>-->
 
 					<div class="mt-8">
-						<Button color="purple" url="/book">Book a table</Button>
+						<Button color="purple" url="/book">Reservar</Button>
 					</div>
 				</div>
 			</div>
@@ -526,46 +535,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 			<div slot="hero-content-right">
 				<Picture
 					class:list={"mx-auto"}
-					src={Dessert}
-					height={600}
-					formats={["avif", "webp"]}
-					alt="A description of my image."
-				/>
-			</div>
-		</Hero>
-	</Section>
-
-	<!-- Contact -->
-	<Section class:list={"bg-white"}>
-		<Hero>
-			<div slot="hero-content-left" class="prose max-w-none">
-				<Badge color="purple" title="Servicios" />
-				<h2 slot="heading-title" class="font-black text-brand-purple h2 !my-4">Acupuntura</h2>
-				<div slot="heading-content">
-					<p>
-						Técnica de Medicina Tradicional China (MTC) que consiste en la introducción de agujas muy finas, 
-						estériles y de un solo uso, en determinados puntos del cuerpo para aliviar dolores y prevenir o 
-						sanar ciertas enfermedades y desequilibrios. Mejora el bienestar general. Para la MTC, la acupuntura 
-						equilibra el flujo de energía o fuerza vital, conocida como «chi» o «qi», que fluye a través de canales 
-						(meridianos) en el cuerpo. Al insertar agujas en puntos específicos en estos meridianos, el flujo de 
-						energía se reequilibra.We're located in the heart of the city, just a stone's throw away from the main 
-						square. Our	restaurant is the perfect place to enjoy a delicious meal with friends and family.
-					</p>
-
-					<!--<span class="text-brand-red font-medium">
-						✔ We also do take-away, so you can enjoy your food at home
-					</span>-->
-
-					<div class="mt-8">
-						<Button color="purple" url="/book">Book a table</Button>
-					</div>
-				</div>
-			</div>
-
-			<div slot="hero-content-right">
-				<Picture
-					class:list={"mx-auto"}
-					src={Dessert}
+					src={Ventosas}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
