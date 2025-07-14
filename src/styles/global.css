@@ -6,7 +6,7 @@
 	--color-brand-green: #157f71;
 	--color-brand-red: #db1d00;
 	--color-brand-purple: #7920ba;
-	--color-brand-blue: #238dd9;
+	--color-brand-orange: #ea9433;
 }
 
 @utility container {
@@ -184,8 +184,8 @@ p {
 	@apply bg-brand-purple hover:bg-brand-purple/80 text-white focus-visible:outline-brand-purple;
 }
 
-.button-blue {
-	@apply bg-brand-blue hover:bg-brand-blue/80 text-white focus-visible:outline-brand-blue;
+.button-orange {
+	@apply bg-brand-orange hover:bg-brand-orange/80 text-white focus-visible:outline-brand-orange;
 }
 
 .menu-item-highlighted.menu-item-highlighted {
@@ -207,7 +207,7 @@ p {
 section.bg-white + section.bg-white > .container,
 section.bg-brand-green + section.bg-brand-green > .container,
 section.bg-brand-purple + section.bg-brand-purple > .container,
-section.bg-brand-blue + section.bg-brand-blue > .container,
+section.bg-brand-orange + section.bg-brand-orange > .container,
 section.bg-brand-red + section.bg-brand-red > .container {
 	@apply pt-0;
 }
