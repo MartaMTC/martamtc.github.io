@@ -1,31 +1,31 @@
 export const menuMain = [
     {
-        name: "Home",
+        name: "Inicio",
         url: "/",
         highlighted: false,
     },
     {
-        name: "Menu",
+        name: "Clases",
         url: "/menu",
         highlighted: false,
     },
     {
-        name: "About Us",
+        name: "Servicios",
         url: "/about-us",
         highlighted: false,
     },
     {
-        name: "Gallery",
+        name: "Blog",
         url: "/gallery",
         highlighted: false,
     },
     {
-        name: "Contact",
+        name: "Contacto",
         url: "/contact",
         highlighted: false,
     },
     {
-        name: "Book",
+        name: "Reservas",
         url: "/book",
         highlighted: true,
     },
@@ -35,7 +35,7 @@ export const footerPrimary = [
     {
         title: "Navigatie",
         items: [
-            { name: "home", url: "/" },
+            { name: "Inicio", url: "/" },
         ],
     },
 ];
