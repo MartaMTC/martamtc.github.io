@@ -33,17 +33,30 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 ---
 
 <Layout>
-	<Section>
+	<Section class:list={"bg-white"}>
 		<Heading>
-			<h1 slot="heading-title" class="font-black text-brand-green h2">Clases</h1>
-			<p slot="heading-content">
-				Ofrezco clases de Qi Gong y Corrección Portural KSP, con las que podrás fortalecer tu organismo a nivel físico, mental y espiritual.
-			</p>
+			<Grid>
+			<div slot="grid-content-2">
+				<div class="flex flex-col items-center prose text-center">
+					<Picture
+						class:list={"not-prose w-full h-auto"}
+						src={Servicio}
+						formats={["avif", "webp"]}
+						alt="A description of my image."
+					/>
+					<h3 class="h4 mt-0 font-black text-brand-purple"> Servicios</h3>
+					<p>
+						Ofrezco clases de Qi Gong y Corrección Portural KSP, con las que podrás 
+						fortalecer tu organismo a nivel físico, mental y espiritual.
+					</p>
+					<div class="mt-8 flex items-center gap-x-8">
+					<Button color="purple" url="/book">Ver Servicios</Button>
+					</div>
+				</div>
+			</div>
+			</Grid>
 		</Heading>
-
 	</Section>
-
-
 
 <!-- Qi Gong -->
 	<Section class:list={"bg-white"}>
