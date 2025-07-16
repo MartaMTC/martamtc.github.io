@@ -2,6 +2,272 @@
 import Layout from "~/layouts/Layout.astro";
 import Section from "~/components/Section.astro";
 import Hero from "~/components/Hero.astro";
+import { Picture, Image } from "astro:assets";
+import Badge from "~/components/Badge.astro";
+import Button from "~/components/Button.astro";
+import ButtonCallUs from "~/components/ButtonCallUs.astro";
+import Grid from "~/components/Grid.astro";
+import Heading from "~/components/Heading.astro";
+import WideImage from "~/components/WideImage.astro";
+import ReviewSlider from "~/components/ReviewSlider.astro";
+
+// Images
+import PizzaHero from "~/assets/images/pizza-hero.png";
+import Pizza from "~/assets/images/pizza.png";
+import Spaghetti from "~/assets/images/spaghetti.png";
+import Fish from "~/assets/images/fish.png";
+import DecorativeImage from "~/assets/images/pexels-shvetsa-5953523.jpg";
+import reviewAuthors from "~/assets/images/review-authors.png";
+import Dessert from "~/assets/images/dessert.png";
+import Mussels from "~/assets/images/mussels2.png";
+import Clase from "~/assets/images/7técnicasenergéticas.png";
+import Servicio from "~/assets/images/Servicios.png";
+import Blog from "~/assets/images/Blog.png";
+import Acupuntura from "~/assets/images/1acupuntura.png";
+import Tuina from "~/assets/images/2tuina.png";
+import Moxa from "~/assets/images/3moxa.png";
+import Fito from "~/assets/images/4fitodieto.png";
+import Ventosas from "~/assets/images/5ventosas.png";
+import Qigong from "~/assets/images/6qigong.png";
+import KSP from "~/assets/images/8correcciónpostural.png";
+---
+
+<Layout>
+<!-- Clases -->
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none">
+				<Badge color="green" title="Marta Pulido MTC" />
+				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Servicios</h2>
+				<div slot="heading-content">
+					<p>
+						Puedes contratar una sesión de Acupuntura, Tuina, Moxibustión, Dieto-Fito terapia ó cupping, 
+						para restablecer tu equilibrio físico, psicológico y energético a nivel físico, mental y espiritual.
+					</p>
+
+					<p>
+						Dirección: Moofit–C/Comandante Benítez, 17–08028 BCN.
+					</p>
+
+					<div class="mt-8 flex items-center gap-x-8">
+					<Button url="/contact">Contacto</Button>
+					<Button url="/book">Reservas</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Clase}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="Imagen a color que ilustra una clase de Qi Gong."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+<!-- Acupuntura -->
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none order-2">
+				<Badge color="purple" title="Servicios" />
+				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Acupuntura</h2>
+				<div slot="heading-content">
+					<p>
+						Técnica de Medicina Tradicional China (MTC) que consiste en la introducción de agujas muy finas, 
+						estériles y de un solo uso, en determinados puntos del cuerpo para aliviar dolores y prevenir o 
+						sanar ciertas enfermedades y desequilibrios. Mejora el bienestar general. Para la MTC, la acupuntura 
+						equilibra el flujo de energía o fuerza vital, conocida como «chi» o «qi», que fluye a través de canales 
+						(meridianos) en el cuerpo. Al insertar agujas en puntos específicos en estos meridianos, el flujo de 
+						energía se reequilibra.We're located in the heart of the city, just a stone's throw away from the main 
+						square. Our	restaurant is the perfect place to enjoy a delicious meal with friends and family.
+					</p>
+
+					<!--<span class="text-brand-red font-medium">
+						✔ We also do take-away, so you can enjoy your food at home
+					</span>-->
+
+					<div class="mt-8">
+						<Button color="purple" url="/book">Reservar</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Acupuntura}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+<!-- Tuina -->
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none order-2">
+				<Badge color="purple" title="Servicios" />
+				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Tuina</h2>
+				<div slot="heading-content">
+					<p>
+						Técnica de Medicina Tradicional China (MTC) que consiste en el uso de movimientos de masaje fuertes 
+						y vigorosos y la acupresión. Los beneficios de esta técnica están por encima de la relajación muscular, 
+						es decir, el Tuina tiene como objetivo central estimular la capacidad que tiene el cuerpo de recuperarse 
+						por sí mismo. Consigue efectos en el exterior, para transportarlos a través del masaje al interior del 
+						organismo. De esa manera, restablece el equilibrio físico, psicológico y energético del cuerpo.
+					</p>
+
+					<!--<span class="text-brand-red font-medium">
+						✔ We also do take-away, so you can enjoy your food at home
+					</span>-->
+
+					<div class="mt-8">
+						<Button color="purple" url="/book">Reservar</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Tuina}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+<!-- Moxibustión -->
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none order-2">
+				<Badge color="purple" title="Servicios" />
+				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Moxibustión</h2>
+				<div slot="heading-content">
+					<p>
+						La moxibustión es una técnica de  Medicina Tradicional China (MTC) que consiste en aplicar calor 
+						estimulando una serie de puntos o zonas del cuerpo. Esta técnica utiliza las hojas pulverizadas, 
+						secas y trituradas de la planta Artemisia vulgaris a la que comúnmente se le da forma de cigarro 
+						denominado moxa. El objetivo es generar un efecto que ayude a equilibrar el organismo gracias a los 
+						estímulos producidos por el calor que penetra a través de los puntos y meridianos de acupuntura, 
+						afectando así a nuestras funciones fisiológicas y órganos internos restableciendo el equilibrio del cuerpo.
+					</p>
+
+					<!--<span class="text-brand-red font-medium">
+						✔ We also do take-away, so you can enjoy your food at home
+					</span>-->
+
+					<div class="mt-8">
+						<Button color="purple" url="/book">Reservar</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Moxa}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+<!-- Dieto-Fito terapia -->
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none order-2">
+				<Badge color="purple" title="Servicios" />
+				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Dieto-Fito terapia</h2>
+				<div slot="heading-content">
+					<p>
+						La Dietoterapia china es una técnica de MTC, que clasifica los alimentos de acuerdo a su naturaleza, 
+						sabor, color… Consiste en aplicar la nutrición humana al tratamiento de una persona con el objetivo de 
+						corregir o prevenir una enfermedad. Esta disciplina se enfoca en modificar la alimentación habitual para 
+						responder a las necesidades de cada uno. 
+						La Fitoterapia china es una técnica de MTC que utiliza hierbas y plantas medicinales para prevenir y tratar 
+						enfermedades y mejorar la salud en general de la persona. En esta forma de tratamiento también se utilizan 
+						ingredientes de mineral en la elaboración de sus fórmulas. 
+					</p>
+
+					<!--<span class="text-brand-red font-medium">
+						✔ We also do take-away, so you can enjoy your food at home
+					</span>-->
+
+					<div class="mt-8">
+						<Button color="purple" url="/book">Reservar</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Fito}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+
+<!-- Cupping -->
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none order-2">
+				<Badge color="purple" title="Servicios" />
+				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Cupping</h2>
+				<div slot="heading-content">
+					<p>
+						La terapia con ventosas o cupping es una de las técnicas más utilizadas por la MTC, desde la 
+						antigüedad. Es un método seguro, eficaz y de fácil manejo para cuidar la salud y prevenir 
+						enfermedades. Las ventosas tradicionales son recipientes parecidos a ‘vasos de vidrio’, que 
+						crean vacío sobre la piel. Las más utilizadas son de vidrio, plástico o silicona, actúan estimulando 
+						la piel y los tejidos subcutáneos para activar la circulación de sangre y energía en los meridianos, 
+						regeneran tejidos, deshacen adherencias internas, tienen acción analgésica y eliminan los factores 
+						patógenos.
+					</p>
+
+					<!--<span class="text-brand-red font-medium">
+						✔ We also do take-away, so you can enjoy your food at home
+					</span>-->
+
+					<div class="mt-8">
+						<Button color="purple" url="/book">Reservar</Button>
+					</div>
+				</div>
+			</div>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Ventosas}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
+	</Section>
+</Layout>
+
+
+
+<!-- 
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Hero from "~/components/Hero.astro";
 import { Picture } from "astro:assets";
 import Badge from "~/components/Badge.astro";
 import Button from "~/components/Button.astro";
@@ -86,3 +352,4 @@ import PizzaHero from "~/assets/images/pizza-hero.png";
 		</Article>
 	</Section>
 </Layout>
+-->
