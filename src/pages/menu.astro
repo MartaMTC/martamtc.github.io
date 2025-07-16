@@ -33,29 +33,38 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 ---
 
 <Layout>
+<!-- Clases -->
 	<Section class:list={"bg-white"}>
-		<Heading>
-			<Grid>
-			<div slot="grid-content-2">
-				<div class="flex flex-col items-center prose text-center">
-					<Picture
-						class:list={"not-prose w-full h-auto"}
-						src={Servicio}
-						formats={["avif", "webp"]}
-						alt="A description of my image."
-					/>
-					<h3 class="h4 mt-0 font-black text-brand-purple"> Servicios</h3>
+		<Hero>
+			<div slot="hero-content-left" class="prose max-w-none order-2">
+				<Badge color="green" title="Clases" />
+				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Clases</h2>
+				<div slot="heading-content">
 					<p>
 						Ofrezco clases de Qi Gong y Corrección Portural KSP, con las que podrás 
 						fortalecer tu organismo a nivel físico, mental y espiritual.
 					</p>
-					<div class="mt-8 flex items-center gap-x-8">
-					<Button color="purple" url="/book">Ver Servicios</Button>
+
+					<p>
+						Dirección: Moofit–C/Comandante Benítez, 17–08028 BCN.
+					</p>
+
+					<div class="mt-8">
+						<Button color="green" url="/book">Reservar</Button>
 					</div>
 				</div>
 			</div>
-			</Grid>
-		</Heading>
+
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Clase}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+				/>
+			</div>
+		</Hero>
 	</Section>
 
 <!-- Qi Gong -->
