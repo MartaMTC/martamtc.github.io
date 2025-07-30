@@ -13,6 +13,7 @@ import ReviewSlider from "~/components/ReviewSlider.astro";
 
 // Images
 import PizzaHero from "~/assets/images/pizza-hero.png";
+import ServiciosHero from "~/assets/images/Servicios-hero.png";
 import Pizza from "~/assets/images/pizza.png";
 import Spaghetti from "~/assets/images/spaghetti.png";
 import Fish from "~/assets/images/fish.png";
@@ -30,48 +31,47 @@ import Fito from "~/assets/images/4fitodieto.png";
 import Ventosas from "~/assets/images/5ventosas.png";
 import Qigong from "~/assets/images/6qigong.png";
 import KSP from "~/assets/images/8correcciónpostural.png";
+
 ---
 
-<Layout>
-<!-- Clases -->
+<Layout title="Servicios" pageTitle="MartaMTC | Acupuntura,quigong..." description="Parte en la que presento servicios de acupuntura, tuina, moxibustión y mucho más.">
 	<Section class:list={"bg-white"}>
 		<Hero>
-			<div slot="hero-content-left" class="prose max-w-none">
+			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
 				<Badge color="purple" title="Marta Pulido MTC" />
-				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Servicios</h2>
-				<div slot="heading-content">
-					<p>
-						Puedes contratar una sesión de Acupuntura, Tuina, Moxibustión, Dieto-Fito terapia ó cupping, 
-						para restablecer tu equilibrio físico, psicológico y energético a nivel físico, mental y espiritual.
-					</p>
+				<h1 class="font-black">Servicios</h1>
 
-					<p>
-						Dirección: Moofit–C/Comandante Benítez, 17–08028 BCN.
-					</p>
+				<p>
+					Puedes contratar una sesión de Acupuntura, Tuina, Moxibustión, Dieto-Fito terapia 
+					ó cupping, para restablecer tu equilibrio físico, psicológico y energético.
+				</p>
 
-					<div class="mt-8 flex items-center gap-x-8">
-					<Button color="purple" url="/contact">Contacto</Button>
-					<Button color="purple" url="/book">Reservar</Button>
-					</div>
+				<!-- <span class="text-brand-green font-medium">✔ We also deliver</span>-->
+
+				<div class="mt-8 flex items-center gap-x-8">
+					<Button url="/contact">Contacto</Button>
+					<Button url="/book">Reservas</Button>
+					<!--<ButtonCallUs />-->
 				</div>
 			</div>
-
 			<div slot="hero-content-right">
 				<Picture
 					class:list={"mx-auto"}
-					src={Servicio}
+					src={ServiciosHero}
 					height={600}
 					formats={["avif", "webp"]}
-					alt="Imagen a color que ilustra los diferentes servicios que se ofrecen."
+					alt="Logotipo redondeado en color verde que representa un arbol de servicios."
+					loading={"eager"}
+					fetchpriority={"high"}
 				/>
 			</div>
 		</Hero>
 	</Section>
 
-<!-- Acupuntura -->
+	<!-- Acupuntura -->
 	<Section class:list={"bg-white"}>
 		<Hero>
-			<div slot="hero-content-left" class="prose max-w-none order-2">
+			<div slot="hero-content-left" class="prose max-w-none">
 				<Badge color="purple" title="Servicios" />
 				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Acupuntura</h2>
 				<div slot="heading-content">
@@ -107,10 +107,10 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 		</Hero>
 	</Section>
 
-<!-- Tuina -->
+	<!-- Tuina -->
 	<Section class:list={"bg-white"}>
 		<Hero>
-			<div slot="hero-content-left" class="prose max-w-none order-2">
+			<div slot="hero-content-left" class="prose max-w-none">
 				<Badge color="purple" title="Servicios" />
 				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Tuina</h2>
 				<div slot="heading-content">
@@ -144,10 +144,10 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 		</Hero>
 	</Section>
 
-<!-- Moxibustión -->
+	<!-- Moxibustión -->
 	<Section class:list={"bg-white"}>
 		<Hero>
-			<div slot="hero-content-left" class="prose max-w-none order-2">
+			<div slot="hero-content-left" class="prose max-w-none">
 				<Badge color="purple" title="Servicios" />
 				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Moxibustión</h2>
 				<div slot="heading-content">
@@ -182,10 +182,10 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 		</Hero>
 	</Section>
 
-<!-- Dieto-Fito terapia -->
+	<!-- Dieto-Fito terapia -->
 	<Section class:list={"bg-white"}>
 		<Hero>
-			<div slot="hero-content-left" class="prose max-w-none order-2">
+			<div slot="hero-content-left" class="prose max-w-none">
 				<Badge color="purple" title="Servicios" />
 				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Dieto-Fito terapia</h2>
 				<div slot="heading-content">
@@ -221,10 +221,10 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 		</Hero>
 	</Section>
 
-<!-- Cupping -->
+	<!-- Cupping -->
 	<Section class:list={"bg-white"}>
 		<Hero>
-			<div slot="hero-content-left" class="prose max-w-none order-2">
+			<div slot="hero-content-left" class="prose max-w-none">
 				<Badge color="purple" title="Servicios" />
 				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Cupping</h2>
 				<div slot="heading-content">
@@ -260,6 +260,7 @@ import KSP from "~/assets/images/8correcciónpostural.png";
 		</Hero>
 	</Section>
 </Layout>
+
 
 
 
