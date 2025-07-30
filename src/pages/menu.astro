@@ -13,6 +13,7 @@ import ReviewSlider from "~/components/ReviewSlider.astro";
 
 // Images
 import PizzaHero from "~/assets/images/pizza-hero.png";
+import ClasesHero from "~/assets/images/Clases-hero.png";
 import Pizza from "~/assets/images/pizza.png";
 import Spaghetti from "~/assets/images/spaghetti.png";
 import Fish from "~/assets/images/fish.png";
@@ -32,38 +33,31 @@ import Qigong from "~/assets/images/6qigong.png";
 import KSP from "~/assets/images/8correcciónpostural.png";
 ---
 
-<Layout>
-<!-- Clases -->
+<Layout title="Clases" pageTitle="MartaMTC | Acupuntura,quigong..." description="Parte en la que presento mis clases de Qi gong y KSP.">
 	<Section class:list={"bg-white"}>
 		<Hero>
-			<div slot="hero-content-left" class="prose max-w-none">
+			<div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
 				<Badge color="green" title="Marta Pulido MTC" />
-				<h2 slot="heading-title" class="font-black text-brand h2 !my-4">Clases</h2>
-				<div slot="heading-content">
-					<p>
-						Ofrezco clases de Qi Gong y Corrección Portural KSP, con las que podrás 
-						fortalecer tu organismo a nivel físico, mental y espiritual, reduciendo 
-						estrés y ansiedad, generando así numerosos beneficios para tu la salud. 
-					</p>
-
-					<p>
-						Dirección: Moofit–C/Comandante Benítez, 17–08028 BCN.
-					</p>
-
-					<div class="mt-8 flex items-center gap-x-8">
+				<h1 class="font-black">Clases</h1>
+				<p>
+					Clases de Qi Gong y Corrección postura KSP para fortalecer cuerpo y mente.
+				</p>
+				<!-- <span class="text-brand-green font-medium">✔ We also deliver</span>-->
+				<div class="mt-8 flex items-center gap-x-8">
 					<Button url="/contact">Contacto</Button>
-					<Button url="/book">Reservar</Button>
-					</div>
+					<Button url="/book">Reservas</Button>
+					<!--<ButtonCallUs />-->
 				</div>
 			</div>
-
 			<div slot="hero-content-right">
 				<Picture
 					class:list={"mx-auto"}
-					src={Clase}
+					src={ClasesHero}
 					height={600}
 					formats={["avif", "webp"]}
-					alt="Imagen a color que ilustra una clase de Qi Gong."
+					alt="Logotipo redondeado en color donde se observan tres personas en clase de gimnasia."
+					loading={"eager"}
+					fetchpriority={"high"}
 				/>
 			</div>
 		</Hero>
